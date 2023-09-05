@@ -1,0 +1,1 @@
+wmic ntevent where "LogFile='System' and TimeGenerated > '20230815000000.000000+000'" get CategoryString,Data,EventCode,EventIdentifier,EventType,Logfile,InsertionStrings,Logfile,SourceName,TimeGenerated,TimeWritten,Type,User,Logfile,Message /format:csv > "C:\reporte_filtrado.csv"
